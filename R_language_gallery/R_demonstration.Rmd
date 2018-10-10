@@ -1,0 +1,120 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+# Reading data 
+- Best for .csv and other text files. 
+
+```{r}
+iris = read.csv("iris.csv")
+```
+
+
+```{r}
+iris
+```
+
+# Simple exploratory data analysis
+
+```{r}
+str(iris)                 # Summarise the structure of the data 
+summary(iris)             # Summarize the data
+mean(iris$Sepal.Length)   # Print the mean of the sepal length
+```
+
+
+# Exploratory plotting 
+
+```{r}
+plot(iris)
+```
+
+
+```{r}
+plot(iris$Petal.Length, iris$Petal.Width, col=factor(iris$Species), xlab="Petal length (cm)", ylab="Petal width (cm)")
+```
+
+```{r}
+hist(iris$Petal.Length, col="black", xlab="Petal length (cm)", main="")
+```
+
+
+# Importing packages 
+
+```{r}
+# install.packages("moments")
+library("moments")
+skewness(iris$Petal.Length)
+kurtosis(iris$Petal.Length)
+```
+
+
+# Almost any data type you want - scrape html, open NetCDFs, parse MS Excel sheets, etc. 
+```{r}
+# install.packages("rvest")
+library("rvest")
+lego_movie <- read_html("http://www.imdb.com/title/tt1490017/")
+lego_movie
+```
+
+
+# ggplot2
+
+```{r}
+library("ggplot2")
+ggplot(data=iris, aes(x=Sepal.Length)) + geom_histogram() + xlab("Sepal Length (cm)") + facet_grid(Species~.)
+```
+
+## Change ggplot themes
+```{r}
+ggplot(data=iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) + geom_point() + xlab("Sepal Length (cm)")
+
+ggplot(data=iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) + geom_point() + xlab("Sepal Length (cm)") + theme_bw()
+
+ggplot(data=iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) + geom_point() + xlab("Sepal Length (cm)") + theme_classic()
+
+ggplot(data=iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) + geom_point() + xlab("Sepal Length (cm)") + theme_light()
+
+```
+
+
+# Hypothesis tests 
+
+```{r}
+ggplot(data=iris) + geom_density(aes(x=Sepal.Length), fill="red", alpha=0.5) + geom_density(aes(x=Petal.Length, fill=Petal.Length), fill="green", alpha=0.5)
+
+t.test(iris$Sepal.Length, iris$Petal.Length)
+```
+
+
+# Machine learning 
+## Packages
+- MICE (missing values)
+- rpart (partition data)
+- PARTY (more partitioning of data)
+- caret (classification and regression training)
+- randomForest (obviously)
+- nnet (nural nets)
+- e1071 (svm, bagged clustering, fuzzy clustering, etc)
+
+```{r}
+library("caret")
+Lm_model <- train(Sepal.Length~Sepal.Width + Petal.Length + Petal.Width, data=iris, method = "lm")
+summary(Lm_model)
+
+library("randomForest")
+Rf_fit<-randomForest(formula=Species~., data=iris)
+print(Rf_fit)
+importance(Rf_fit)
+
+library("nnet")
+nnet_model <- nnet(Species~., data=iris, size = 10)
+
+library("e1071")
+svm_model <- svm(Species ~ Sepal.Length + Sepal.Width, data=iris)
+plot(svm_model, data = iris[,c(2,3,6)])
+
+```
+
+# The end :)

@@ -1,0 +1,28 @@
+permalink: /posts/:year-:month-:day-:title.html
+
+future: true
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  parse_block_html: true
+github:
+  owner_url: https://github.com/thehackerwithin/UoB
+url: http://thehackerwithin.org/UoB
+title: Hacker Within
+chapter: University of Birmingham, UK
+meet_time: 1-2pm
+meet_place: Murray Learning Centre, UG07
+description: An initial blog and site for THW at UoB
+twitter: hackerwithin
+gravatar_url: http://www.gravatar.com/avatar/0203c034a145af6cc2576d56cdb4cf73
+disqus_username:
+defaults:
+  -
+    scope:
+      path: "" # empty -> all files
+    values:
+      layout: "layout"
+# Enable strict error checking like so:
+# liquid:
+#  error_mode: strict
