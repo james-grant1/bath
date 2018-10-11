@@ -7,13 +7,13 @@ kramdown:
   hard_wrap: false
   parse_block_html: true
 github:
-  owner_url: https://github.com/thehackerwithin/UoB
-url: http://thehackerwithin.org/UoB
+  owner_url: https://github.com/thehackerwithin/bath
+url: http://thehackerwithin.org/bath
 title: Hacker Within
-chapter: University of Birmingham, UK
-meet_time: 1-2pm
-meet_place: Murray Learning Centre, UG07
-description: An initial blog and site for THW at UoB
+chapter: University of Bath, UK
+meet_time: 14:15
+meet_place: TBC 
+description: An initial blog and site for THW at Bath
 twitter: hackerwithin
 gravatar_url: http://www.gravatar.com/avatar/0203c034a145af6cc2576d56cdb4cf73
 disqus_username:

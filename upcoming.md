@@ -8,7 +8,7 @@ title: "Upcoming Topics"
 Upcoming Topics
 ===============
 
-**Summer 2018**
+**Autumn 2018**
 
 See below for upcoming meetings.
 

@@ -9,24 +9,24 @@ title: "About"
 # The {{ site.title }}, {{ site.chapter }}
 
 To keep up to date - join the mailing list.  To subscribe, email
-[Majordomo@lists.bham.ac.uk](Majordomo@lists.bham.ac.uk) with a "plain text"
+[sympa@lists.bath.ac.uk](sympa@lists.bath.ac.uk) with a "plain text"
 (not HTML) email, having the following text as the body of the email:
-`subscribe hacker-within`
+`SUBSCRIBE hacker-within`
 
 Please make sure there is a new line at the end.
 
 If you have any problems subscribing then just email
-[bear-software@contacts.bham.ac.uk](bear-software@contacts.bham.ac.uk) and we
+[hacker-within-request@lists.bath.ac.uk](hacker-within-request@lists.bath.ac.uk) and we
 can subscribe you.
 
 After following those instructions, you should be able to [mail the
 list](mailto:hacker-within@lists.bham.ac.uk).
 
-<b>Summer 2018 is here!</b>
+<b>Autumn 2018 is here!</b>
 
 <ul class="listing">
 <li>
-<span>Summer 2018</span><a href="{{ site.url }}/upcoming.html">Upcoming Topics</a>
+<span>Autumn 2018</span><a href="{{ site.url }}/upcoming.html">Upcoming Topics</a>
 </li>
   {% assign upcoming = site.posts | where: "category" , "upcoming" %}
   {% for post in upcoming reversed %}
@@ -41,7 +41,7 @@ list](mailto:hacker-within@lists.bham.ac.uk).
 </li>
 </ul>
 
-Most work in academia makes use of computing to analyze data.   Over the last decade there has been an explosion in the number, range and flexibility of software for data analysis.   With so much choice, how do we choose the right tools?  In the face of such complexity, how do we learn to work efficiently and simply, so we can share our work, and properly report our analyses?   We need to find - The Hacker Within.
+Most work in academia makes use of computing to generate, collect or analyse data.   Over the last decade there has been an explosion in the number, range and flexibility of software for data analysis.   With so much choice, how do we choose the right tools?  In the face of such complexity, how do we learn to work efficiently and simply, so we can share our work, and properly report our analyses?   We need to find - The Hacker Within.
 
 ## What:
 
@@ -58,24 +58,22 @@ We started this group because we know that using the right tools reduces error a
 
 ## Who:
 
-Anyone interested in how to learn and do things by programming computers is welcome to come to our meetings. You don’t need to be affiliated with the University of Birmingham and you don’t need to come to every meeting. There is no set of prerequisites, although we frequently use the command line, Python, R, version control and Jupyter notebooks.
+Anyone interested in how to learn and do things by programming computers is welcome to come to our meetings. You don’t need to be affiliated with the University of Bath and you don’t need to come to every meeting. There is no set of prerequisites, although we frequently use the command line, Python, R, version control and Jupyter notebooks.
 
 We decide the topics by negotiation in the meeting and on our mailing list, but the main staff contacts are:
 
-* Matthew Brett [m.brett@bham.ac.uk](m.brett@bham.ac.uk) (College of Life and
-  Environmental Sciences);
-* Research Software Group [bear-software@contacts.bham.ac.uk](bear-software@contacts.bham.ac.uk) (IT Services);
-* Debbie Carter [d.j.carter@bham.ac.uk](d.j.carter@bham.ac.uk) (IT Services).
+* James Grant, Research Software Engineer, Computing Services, r.j.grant@bath.ac.uk;
+* Research Software Group [rse-support@bath.ac.uk](rse-support@bath.ac.uk) (Copmuting Services);
 
 ## Where:
 
-The meetings move around quite a bit.  Please see the [upcoming meetings
+The meetings may move around quite a bit.  Please see the [upcoming meetings
 page]({{ site.baseurl }}{% link upcoming.md %}) for the location of the next
 meeting.
 
 ## When:
 
-We will meet on the third Monday of each month, to start off with, at a time /
+We will meet from 14:15 on the last Friday of each month, to start off with, at a 
 venue that may shift from meeting to meeting (see above).
 
 <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="{{ site.twitter }}">Tweet</a>
@@ -83,8 +81,8 @@ venue that may shift from meeting to meeting (see above).
 <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
 </section>
 
-## Talk videos
+<!--- ## Talk videos
 
 Have a look at the [Hacker Within Canvas
 course](https://canvas.bham.ac.uk/courses/33864) for links to talk videos, if
-they are available.
+they are available. --->

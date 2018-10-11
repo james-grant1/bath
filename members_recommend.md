@@ -7,6 +7,8 @@ Here THW members recommend resources they found useful.
 See [the glossary](./glossary.html) for definitions and links to more
 information.
 
+<!---
+
 ## Version control
 
 - [Learn Git Branching](https://learngitbranching.js.org) - a fantastic
@@ -15,5 +17,7 @@ information.
   in the web-based terminal to test your knowledge.  We will definitely be
   using it to train people in the Birmingham Clinical Trials Unit in the
   future (Matt Hill).
+
+--->
 
 </section>

@@ -1,8 +1,8 @@
 # The Hacker Within
 
 This is the website that keeps the blog posts for each THW meeting at the
-University of Birmingham, UK. The rendered website can be found
-[here](http://thehackerwithin.github.io/UoB).
+University of Bath, UK. The rendered website can be found
+[here](http://thehackerwithin.github.io/bath).
 
 ## How To Be The Speaker
 
@@ -24,7 +24,7 @@ place it in an appropriately named directory in the master branch of this
 GitHub repository. Make a [pull
 request](https://help.github.com/articles/creating-a-pull-request/) or push
 your branch to the
-[thehackerwithin/UoB](http://github.com/thehackerwithin/UoB) fork. If you know
+[thehackerwithin/bath](http://github.com/thehackerwithin/bath) fork. If you know
 how to do that, please go right ahead. If you aren't sure about forks and pull
 requests, here are some detailed instructions:
 
@@ -35,15 +35,15 @@ adding other content to Hacker Within repository, such as example code.
 
 Let's say that your Github username is `YOURUSERNAME`.
 
-1.  Go to the UoB Hacker Within repository at:
-    [https://github.com/thehackerwithin/UoB](https://github.com/thehackerwithin/UoB).
+1.  Go to Bath the  Hacker Within repository at:
+    [https://github.com/thehackerwithin/bath](https://github.com/thehackerwithin/bath).
 1.  Press the Fork button ([you'll need a github
     account](https://github.com/signup)).
 3.  In your terminal, execute `git clone
-    https://github.com/thehackerwithin/UoB.git`
-4.  Enter the new directory with `cd UoB`
+    https://github.com/thehackerwithin/bath.git`
+4.  Enter the new directory with `cd bath`
 5.  Add a Git remote for your fork with `git remote add YOURUSERNAME
-    https://github.com/YOURUSERNAME/UoB.git`
+    https://github.com/YOURUSERNAME/bath.git`
 6.  Fetch information about your fork with `git fetch YOURUSERNAME`
 7.  Start a new branch for your edits with `git branch --no-track
     name-of-thing-im-working-on origin/master`.  For example, if you are adding a tutorial
@@ -75,7 +75,7 @@ new branch.
 11. Git push to your remote with e.g. `git push YOURUSERNAME
     add-python-tutorial` where YOURUSERNAME is your Github user name, and
     `add-python-tutorial` is the name of your branch (see above).
-12. Navigate in your browser to https://github.com/YOURUSERNAME/UoB and press
+12. Navigate in your browser to https://github.com/YOURUSERNAME/bath and press
     the pull request button to ask us to merge your changes into the main website.
 
 Now you're done adding code example files! You'll need to edit the post related
@@ -97,7 +97,7 @@ Then, create and modify the post as in the sections below.
 
 #### Creating a Post
 
-In the directory that you just cloned (UoB), you'll notice a `_posts`
+In the directory that you just cloned (bath), you'll notice a `_posts`
 directory. The post related to the day and topic of your talk may already
 exist. If so, skip ahead to "Modifying a Post."
 
@@ -111,7 +111,7 @@ You post is in [Github
 Markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax)
 format - see that page for ways of marking up your text.
 
-- In the UoB directory, execute `cp _drafts/YYYY-MM-DD-subject.markdown
+- In the bath directory, execute `cp _drafts/YYYY-MM-DD-subject.markdown
   _posts/2015-03-01-katysbirthday.markdown`
 - Then, edit that file as you see fit.
 - Add that file to the repository `git add _posts/2015-03-01-katysbirthday.markdown`
@@ -119,14 +119,14 @@ format - see that page for ways of marking up your text.
 - Push it to your fork as above with something like `git push YOURUSERNAME
   add-python-tutorial -u` where `YOURUSERNAME` is your Github user name, and
   `add-python-tutorial` is the branch name you chose above.
-- Check how your new post looks by going to https://YOURUSERNAME.github.io/UoB
+- Check how your new post looks by going to https://YOURUSERNAME.github.io/bath
   in your browser.  Navigate to your new post.  Some of the page styling will
   be broken, because your fork is not directly attached to the main Hacker
   Within website, but check the content looks right for the post.
 - Iterate on this until you are happy - edit, push, review.
 - When you are ready, make a pull request to have your edits merged into the
   main website.  To do this, navigate in your browser to
-  https://github.com/YOURUSERNAME/UoB and press the pull request button to ask
+  https://github.com/YOURUSERNAME/bath and press the pull request button to ask
   us to merge your changes into the main website.
 
 #### Modifying a Post
@@ -147,7 +147,7 @@ You should have a server up and running locally at <http://localhost:4000>.
 
 ### Show Up
 
-Please arrive 10-15 minutes before the start time so that you can set up your
+Please arrive 5-10 minutes before the start time so that you can set up your
 computer and test out the projector. Please figure out how to zoom in on text
 that might be too small from the back. Try command-plus-plus in the terminal
 and other applications. If you're an emacs user on a mac, you may need
@@ -194,4 +194,3 @@ The Left layout is [MIT](https://github.com/holman/left/blob/master/LICENSE) wit
 added caveats. Left is the work of Zach Holman [@holman](https://twitter.com/holman).
 
 ![Left](http://cl.ly/image/3S2r1p2C0E2B/content)
-

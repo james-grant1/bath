@@ -29,4 +29,4 @@ Code examples can be found [here][code].
 ## <+ person +> : <+ topic +>
 
 
-[code]: https://github.com/thehackerwithin/UoB/tree/master/topic "Code Examples" 
+[code]: https://github.com/thehackerwithin/bath/tree/master/topic "Code Examples" 

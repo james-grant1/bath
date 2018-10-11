@@ -9,7 +9,7 @@ title: "Posts"
 Previous Topics
 ===============
 
-**University of Birmingham**
+**University of Bath**
 
 <ul class="listing">
   {% assign past_posts = site.posts | where: "category" , "posts" %}
